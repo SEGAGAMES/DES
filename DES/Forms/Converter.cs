@@ -89,7 +89,7 @@ namespace Forms
         /// </summary>
         /// <param name="inputStr">Исходное сообщение.</param>
         /// <returns>Блоки по 64 бита.</returns>
-        static public Bit[][] StringToInt(string inputStr)
+        static public Bit[][] StringToBit(string inputStr)
         {
             Bit[][] output;
             byte[] bytes = Encoding.BigEndianUnicode.GetBytes(inputStr);
@@ -148,9 +148,9 @@ namespace Forms
         }
 
         /// <summary>
-        /// Преобразование 14 буквенного ключа в 64 битовый.
+        /// Преобразование 7 буквенного ключа в 64 битовый.
         /// </summary>
-        /// <param name="inputStr">14 буквенный ключ.</param>
+        /// <param name="inputStr">7 буквенный ключ.</param>
         /// <returns>64 битовый ключ.</returns>
         /// <exception cref="ArgumentException"></exception>
         static public Bit[] StringToKey(string inputStr)
